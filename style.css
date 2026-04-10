@@ -1,36 +1,51 @@
 body{
-    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+}
+nav a{
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+/* Hero section styles */
+.hero{
     text-align: center;
+    padding: 80px 20px;
+    background-color: #007bff;
+    color: white;
 }
-img{
-    border-radius: 10px;
-    margin-top: 20px;
-    animation: move 2s infinite alternate;
+.hero h1{
+    animation: fadeIn 2s ease-in-out;
 }
-@keyframes fadeIn {
+@keyframes fadeIn{
     from {opacity: 0;}
     to {opacity: 1;}
 }
-h1 {
-    animation: fadeIn 2s ease-in-out;
+
+/* Sections styles */
+section{
+    padding: 40px;
 }
-a{
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
+
+/* Projects section styles */
+.project{
+    background: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
     transition: 0.3s;
 }
-a:hover {
-    background-color: #45a049;
-    transform: scale(1.1);
-}
-@keyframes move{
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(100px);
-    }
+.project:hover{
+    transform: scale(1.03);
 }

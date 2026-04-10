@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My First Website</title>
+        <title>My Portfolio</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Welcome to My First Website</h1>
-        <p>This is a simple paragraph on my website.</p>
-        <img src="images/backpack1.jpg" alt="Backpack" width="300">
-        <p>
-            <a href="about.html">Go to About Me</a>
-        </p>
+        <nav>
+            <h2>My Portfolio</h2>
+            <div>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        
+        <!--Hero section-->
+        <section class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my work and projects.</p>
+            <img src="images/backpack1.jpg" width="150" style="border-radius: 50%;">
+        </section>
+
+        <!--About section-->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites.</p>
+        </section>
+
+        <!--Projects section-->
+        <section id="projects">
+            <h2>Projects</h2>
+            <!--p>Here are some of the projects I've worked on:</p-->
+            <div class="project">
+                <h3>Project One</h3>
+                <p>A web application that helps users manage their 
+                    tasks efficiently.</p>
+            </div>
+            <div class="project">
+                <h3>Project Two</h3>
+                <p>A mobile app that provides real-time weather updates.</p>
+            </div>
+        </section>
+
+        <!--Contact section-->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: frjathman@gmail.com</p>
+        </section>
     </body>
 </html>
